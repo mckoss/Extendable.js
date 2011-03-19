@@ -41,7 +41,7 @@ var window;
 function Extendable(obj, parent)
 {
     if (this === window) {
-        return new Extendable(obj);
+        return new Extendable(obj, parent);
     }
 
     if (obj) {
